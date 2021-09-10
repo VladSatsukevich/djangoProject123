@@ -17,6 +17,3 @@ def partners(request):
 
 def pharmacies(request):
     return render(request, "pharmacies.html")
-
-def suggestions(request):
-    return render(request, "suggestions.html")

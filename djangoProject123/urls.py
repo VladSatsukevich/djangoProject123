@@ -18,20 +18,18 @@ from django.urls import path
 from django.conf.urls import url
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import home, about, contacts, news, partners, pharmacies, suggestions
+from .views import home, about, contacts, news, partners, pharmacies
 from django.views.generic import RedirectView
 
-urlpatterns = {
+urlpatterns = [
     url(r'^$', home, name='home'),
     url('about', about, name='about'),
     url('contacts', contacts, name='contacts'),
     url('news', news, name='news'),
     url('partners', partners, name='partners'),
     url('pharmacies', pharmacies, name='pharmacies'),
-    url('suggestions', suggestions, name='suggestions'),
     url(r'^admin/', admin.site.urls),
-
-}
+]
 
 
 
