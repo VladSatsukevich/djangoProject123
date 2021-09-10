@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Аптека ООО "Искамед"</title>
+        <link rel="icon" href="static/img/logo.jpg" type="image/x-icon" />
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <canvas id="canvas"></canvas>
+        <nav>
+            <div class="logo">
+                <h4>Аптека ООО "Искамед"</h4>
+            </div>
+             <ul class="nav-links">
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="partners.html">Партнерам</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="pharmacies.html">Аптеки</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="suggestions.html">Предложения</a></li>
+            </ul>
+             <div class="footer">
+                <h3>© 2003–2021 ООО «Искамед». Все права защищены.</h3>
+            </div>
+        </nav>
+        <div class="all">
+		<input checked type="radio" name="respond" id="desktop">
+			<article id="slider">
+					<input type="radio" name="slider" id="switch1">
+					<input type="radio" name="slider" id="switch2">
+					<input type="radio" name="slider" id="switch3">
+					<input type="radio" name="slider" id="switch4">
+					<input type="radio" name="slider" id="switch5">
+				<div id="slides">
+					<div id="overflow">
+						<div class="image">
+							<article><img src="static/img/1.jpg"></article>
+							<article><img src="static/img/2.jpg"></article>
+							<article><img src="static/img/3.jpg"></article>
+							<article><img src="static/img/4.jpg"></article>
+							<article><img src="static/img/5.jpg"></article>
+						</div>
+					</div>
+				</div>
+				<div id="controls">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+					<label for="switch5"></label>
+				</div>
+				<div id="active">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+					<label for="switch5"></label>
+				</div>
+			</article>
+	</div>
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function (){
+                document.getElementById('switch' + counter).checked = true;
+                counter++;
+                if(counter > 5){
+                    counter = 1;
+                }
+            }, 2000);
+        </script>
+        <script type="text/javascript" src="{% static 'js/canvas.js' %}"></script>
+    </body>
+</html>
