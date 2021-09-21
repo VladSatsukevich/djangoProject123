@@ -14,7 +14,7 @@ for (i = 0; i < updateBtns.length; i++) {
 		}
 	})
 function addCookieItem(productId, action){
-	console.log('Not logged in')
+	console.log('Не в сети')
 
 	if (action == 'add'){
 		if (cart[productId] == undefined){
@@ -61,7 +61,7 @@ function updateUserOrder(productId, action){
 }
 
 function addCookieItem(productId, action){
-	console.log('User is not authenticated')
+	console.log('Не в сети!')
 
 	if (action == 'add'){
 		if (cart[productId] == undefined){

@@ -18,7 +18,7 @@ from django.urls import path, include
 from django.conf.urls import url
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import home, about, contacts, news, partners, pharmacies, register, login, store, cart, checkout, updateItem, processOrder
+from .views import home, about, contacts, news, pharmacies, store, cart, checkout, updateItem, processOrder
 from django.views.generic import RedirectView
 from django.conf import settings
 
@@ -28,11 +28,8 @@ urlpatterns = [
     url('about', about, name='about'),
     url('contacts', contacts, name='contacts'),
     url('news', news, name='news'),
-    url('partners', partners, name='partners'),
     url('pharmacies', pharmacies, name='pharmacies'),
-    url('register', register, name='register'),
-    url('login', login, name='login'),
-    url('store/', store, name="store"),
+    url('store', store, name="store"),
     url('cart/', cart, name="cart"),
     url('checkout/', checkout, name="checkout"),
     url('update_item/', updateItem, name="update_item"),
