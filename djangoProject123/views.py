@@ -22,9 +22,6 @@ def contacts(request):
 def news(request):
     return render(request, "news.html")
 
-def pharmacies(request):
-    return render(request, "pharmacies.html")
-
 def store(request):
     data = cartData( request )
     cartItems = data['cartItems']
@@ -103,6 +100,5 @@ def processOrder(request):
             state=data['shipping']['state'],
             zipcode=data['shipping']['zipcode'],
         )
-
     return JsonResponse('Payment complete', safe=False)
 

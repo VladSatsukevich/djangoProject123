@@ -29,6 +29,7 @@ body {
   position: absolute;
 }
 
+
 ul{
   top: 100px;
   background: transparent;
@@ -65,6 +66,8 @@ nav{
   font-size: 35px;
   position: relative;
 }
+
+
 
 .footer{/*футер*/
   color: rgba(255, 255, 255, 0.98);

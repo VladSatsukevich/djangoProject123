@@ -1,11 +1,40 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <h4>Контакты</h4>
+    <link rel="icon" href="static/img/logo.png" type="image/x-icon" />
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <title>О компании</title>
 </head>
-<body>
+    <body>
+    <canvas id="canvas"></canvas>
+        <nav>
+            <div class="logo">
+                <h4>О компании</h4>
+            </div>
+            <div class="page" style="color: rgba(255, 255, 255, 0.98); text-transform: uppercase; letter-spacing: 8px; font-size: 34px; background: transparent; position: absolute; top: 12.5%; text-align: center">
+                <h5>Адрес<br>
+                    ООО «Искамед»<br>
+                    ул. Карла Либкнехта, д. 70, пом. 6<br>
+                    220036, г. Минск<br>
+                    Беларусь<br>
+                    Режим работы<br>
+                    Приемная<br>понедельник—четверг c 8:30 до 17:15, <br>пятница c 8:30 до 16:30<br>Отдел<br>сбытапонедельник—четверг c 8:30 до 17:15, <br>пятница c 8:30 до 16:30<br>Отдел<br>розничной торговлипонедельник—четверг c 8:30 до 17:15, <br>пятница c 8:30 до 16:30<br>
+                    Телефоны<br>
+                    Приемная(017) 373-08-89, 357-08-88 (факс)<br>Отдел сбыта(017) 373-17-84, 317-17-85<br>Отдел розничной торговли(017) 355-19-24, 337-83-04, 374-04-67, 360-92-62 (факс)<br>Отдел кадров(017) 374-01-99, (044) 764-47-00<br>
+                    Электронная почта<br>
+                    info@iskamed.by<br> </h5>
+            </div>
+            <div class="footer">
+                <h3>© 2003–2021 ООО «Искамед». Все права защищены.</h3>
+            </div>
+        </nav>
 
-</body>
+
+    <script type="text/javascript" src="{% static 'js/canvas.js' %}"></script>
+    </body>
 </html>

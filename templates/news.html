@@ -1,11 +1,33 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <h4>Новости</h4>
-</head>
-<body>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Новости</title>
+        <link rel="icon" href="static/img/logo.png" type="image/x-icon" />
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <canvas id="canvas"></canvas>
+        <nav>
+            <div class="logo">
+                <h4>О компании</h4>
+            </div>
+            <div class="page" style="color: rgba(255, 255, 255, 0.98); text-transform: uppercase; letter-spacing: 8px; font-size: 54px; background: transparent; position: absolute; top: 12.5%; text-align: center">
+                <h6> Аптеки ООО "Искамед" обслуживают клиентов страховых компаний "Белгосстрах", "Белнефтестрах", "Белэксимгарант", "БелРОСстрах" и "Таск". Для получения лекарств по договорам (полисам) добровольного медицинского страхования в аптеках нашей компании клиенту достаточно предъявить действующую карточку застрахованного лица и рецепт, выписанный врачом.
+К сведению: аптеки-партнеры в данный момент не обслуживают клиентов страховых компаний!
+В случае превышения лимита по отпуску лекарственных средств существует возможность доплаты наличными денежными средствами либо с использованием банковских пластиковых карт. Для вашего удобства, уточнить наличие лекарственного средства можно на сайте компании. Поиск ближайшей аптеки, также не займет много времени, если использовать поиск аптек.
+Заботьтесь о своем здоровье с минимальными затратами своих сил, времени и материальных средств! </h6>
+            </div>
+            <div class="footer">
+                <h3>© 2003–2021 ООО «Искамед». Все права защищены.</h3>
+            </div>
+        </nav>
 
-</body>
+
+    <script type="text/javascript" src="{% static 'js/canvas.js' %}"></script>
+    </body>
 </html>
